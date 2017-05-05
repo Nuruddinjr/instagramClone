@@ -12,7 +12,7 @@ import FirebaseDatabase
 import FirebaseStorage
 
 class SignUpViewController: UIViewController {
-
+    
     @IBOutlet weak var usernameTextField: UITextField!
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -67,10 +67,14 @@ class SignUpViewController: UIViewController {
         avatarImage.layer.cornerRadius = 40
         avatarImage.clipsToBounds = true
         avatarImage.isUserInteractionEnabled = true
-       
+        
         avatarImage.addGestureRecognizer( UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.handleSelectProfileImageView)))
         handleTextField()
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     func handleTextField() {
@@ -99,41 +103,37 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUp_onClick(_ sender: Any) {
-        FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user: FIRUser?, error: Error?) in
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
-            let uid = user?.uid
-            let storageRef = FIRStorage.storage().reference(forURL: "gs://instagram-clone-c7fd0.appspot.com").child("profile_image").child(uid!)
-            if let profileImg = self.selectedImage, let imageData = UIImageJPEGRepresentation(profileImg, 0.1) {
-                storageRef.put(imageData, metadata: nil, completion: { (metadata, error) in
-                    if error != nil {
-                        return
-                    }
-                    let profileImageUrl = metadata?.downloadURL()?.absoluteString
-                    
-                    self.setUserInfomation(profileImageUrl: profileImageUrl!, username: self.usernameTextField.text!, email: self.emailTextField.text!, uid: uid!)
-                })
-            }
-        })
+        ProgressHUD.show("Waiting......", interaction: false)
+        
+         view.endEditing(true)
+        if let profileImg = self.selectedImage, let imageData = UIImageJPEGRepresentation(profileImg, 0.1) {
+            AuthService.signUp(email: emailTextField.text!, password: passwordTextField.text!, username: usernameTextField.text!, imageData: imageData, onSuccess: {
+                ProgressHUD.showSuccess("Sucessful login")
+                self.performSegue(withIdentifier: "moveToTabBar2", sender: nil)
+            }, onError: { (errorString) in
+                print(errorString!)
+                ProgressHUD.showError(errorString!)
+                
+                
+                
+            }) // if let finish
+            
+        } else
+        {
+            ProgressHUD.showError("Profile Image can't be empty")
+
+        }
         
     }
     
-    func setUserInfomation(profileImageUrl: String, username: String, email: String, uid: String) {
-        let ref = FIRDatabase.database().reference()
-        let usersReference = ref.child("users")
-        let newUserReference = usersReference.child(uid)
-        newUserReference.setValue(["username": username, "email": email, "profileImageUrl": profileImageUrl])
-        self.performSegue(withIdentifier: "moveToTabBar2", sender: nil)
-    }
+    
     
     @IBAction func dismiss_onClick(_ sender: UIButton) {
         dismiss(animated:true, completion:nil)
         
     }
     
-   
+    
 }
 
 extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {

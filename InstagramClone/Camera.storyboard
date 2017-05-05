@@ -20,13 +20,53 @@
                     <view key="view" contentMode="scaleToFill" id="YyF-kl-RCn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEK-aI-eBZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_phot" translatesAutoresizingMaskIntoConstraints="NO" id="Fd4-a6-NGf">
+                                        <rect key="frame" x="8" y="10" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="5JR-xY-sGm"/>
+                                            <constraint firstAttribute="width" constant="80" id="Z4F-Bf-eZf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zmn-go-E1H">
+                                        <rect key="frame" x="96" y="10" width="271" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="bhg-xY-clv"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Zmn-go-E1H" firstAttribute="leading" secondItem="Fd4-a6-NGf" secondAttribute="trailing" constant="8" id="DKx-oZ-a0Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zmn-go-E1H" secondAttribute="bottom" constant="10" id="LYr-Hp-qoq"/>
+                                    <constraint firstAttribute="height" constant="100" id="U7W-s9-CpY"/>
+                                    <constraint firstItem="Zmn-go-E1H" firstAttribute="top" secondItem="lEK-aI-eBZ" secondAttribute="top" constant="10" id="bK9-UJ-HhD"/>
+                                    <constraint firstItem="Fd4-a6-NGf" firstAttribute="leading" secondItem="lEK-aI-eBZ" secondAttribute="leading" constant="8" id="dwT-Yc-lhG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zmn-go-E1H" secondAttribute="trailing" constant="8" id="kzC-Ig-BcN"/>
+                                    <constraint firstItem="Fd4-a6-NGf" firstAttribute="top" secondItem="lEK-aI-eBZ" secondAttribute="top" constant="10" id="lqj-23-j1f"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fd4-a6-NGf" secondAttribute="bottom" constant="10" id="x5D-RC-M09"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lEK-aI-eBZ" secondAttribute="trailing" id="0ge-yz-VZ0"/>
+                            <constraint firstItem="lEK-aI-eBZ" firstAttribute="leading" secondItem="YyF-kl-RCn" secondAttribute="leading" id="8YT-aE-SpZ"/>
+                            <constraint firstItem="lEK-aI-eBZ" firstAttribute="top" secondItem="cgI-Oq-ewR" secondAttribute="bottom" id="Aof-cM-VMn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Camera" id="AuA-r8-Ev2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21B-cM-xZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1490" y="1003"/>
+            <point key="canvasLocation" x="1488.8" y="1002.5487256371815"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xcy-UE-m2y">
@@ -53,5 +93,6 @@
     </scenes>
     <resources>
         <image name="Photo" width="22" height="23"/>
+        <image name="placeholder_phot" width="300" height="300"/>
     </resources>
 </document>

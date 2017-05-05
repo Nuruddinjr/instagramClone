@@ -11,7 +11,7 @@ import FirebaseAuth
 
 
 class SignInViewController: UIViewController {
-
+    
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -44,8 +44,22 @@ class SignInViewController: UIViewController {
         signInButton.isEnabled = false
         passwordTextField.layer.addSublayer(passwordBottomLayer)
         handleTextField()
-
+        
     }
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        if FIRAuth.auth()?.currentUser != nil {
+//            self.performSegue(withIdentifier: "moveToTabBar", sender: nil)
+//        }
+    }
+    
     func handleTextField() {
         emailTextField.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControlEvents.editingChanged)
         passwordTextField.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControlEvents.editingChanged)
@@ -64,16 +78,21 @@ class SignInViewController: UIViewController {
         signInButton.isEnabled = true
     }
     @IBAction func onClick_signIn(_ sender: Any) {
-        FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
+        view.endEditing(true)
+        ProgressHUD.show("Waiting.....", interaction: false)
+        AuthService.signIn(email: emailTextField.text!, password: passwordTextField.text!, onSuccess: {
+            ProgressHUD.showSuccess("Sucessful Login")
             self.performSegue(withIdentifier: "moveToTabBar", sender: nil)
-        })
+        }, onError: {
+            error  in
+            ProgressHUD.showError(error!)
+
+            print(error!)
+        }
+        )
         
     }
-
-
-   
+    
+    
+    
 }
