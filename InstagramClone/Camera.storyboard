@@ -24,7 +24,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEK-aI-eBZ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="100"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_phot" translatesAutoresizingMaskIntoConstraints="NO" id="Fd4-a6-NGf">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_phot" translatesAutoresizingMaskIntoConstraints="NO" id="Fd4-a6-NGf">
                                         <rect key="frame" x="8" y="10" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="5JR-xY-sGm"/>
@@ -54,15 +54,36 @@
                                     <constraint firstAttribute="bottom" secondItem="Fd4-a6-NGf" secondAttribute="bottom" constant="10" id="x5D-RC-M09"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcB-Jz-rG7">
+                                <rect key="frame" x="8" y="560" width="359" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OGk-3s-s03"/>
+                                </constraints>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareButton_touchUpInside:" destination="eDZ-M2-VzV" eventType="touchUpInside" id="yt2-cD-kwM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="lEK-aI-eBZ" secondAttribute="trailing" id="0ge-yz-VZ0"/>
                             <constraint firstItem="lEK-aI-eBZ" firstAttribute="leading" secondItem="YyF-kl-RCn" secondAttribute="leading" id="8YT-aE-SpZ"/>
                             <constraint firstItem="lEK-aI-eBZ" firstAttribute="top" secondItem="cgI-Oq-ewR" secondAttribute="bottom" id="Aof-cM-VMn"/>
+                            <constraint firstItem="GcB-Jz-rG7" firstAttribute="leading" secondItem="YyF-kl-RCn" secondAttribute="leading" constant="8" id="HVa-i6-ZNo"/>
+                            <constraint firstAttribute="trailing" secondItem="GcB-Jz-rG7" secondAttribute="trailing" constant="8" id="eNM-3G-fim"/>
+                            <constraint firstItem="KZo-rO-eVY" firstAttribute="top" secondItem="GcB-Jz-rG7" secondAttribute="bottom" constant="8" id="xPe-yn-Ygh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Camera" id="AuA-r8-Ev2"/>
+                    <connections>
+                        <outlet property="captionTextView" destination="Zmn-go-E1H" id="bRo-AJ-kjZ"/>
+                        <outlet property="photo" destination="Fd4-a6-NGf" id="AOh-SM-p9b"/>
+                        <outlet property="shareButton" destination="GcB-Jz-rG7" id="XVw-1D-9Ad"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21B-cM-xZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

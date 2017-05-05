@@ -68,7 +68,7 @@ class SignUpViewController: UIViewController {
         avatarImage.clipsToBounds = true
         avatarImage.isUserInteractionEnabled = true
         
-        avatarImage.addGestureRecognizer( UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.handleSelectProfileImageView)))
+        avatarImage.addGestureRecognizer( UITapGestureRecognizer(target: self, action: #selector(self.handleSelectProfileImageView)))
         handleTextField()
         
     }
@@ -78,9 +78,9 @@ class SignUpViewController: UIViewController {
     }
     
     func handleTextField() {
-        usernameTextField.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControlEvents.editingChanged)
-        emailTextField.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControlEvents.editingChanged)
-        passwordTextField.addTarget(self, action: #selector(SignUpViewController.textFieldDidChange), for: UIControlEvents.editingChanged)
+        usernameTextField.addTarget(self, action: #selector(self.textFieldDidChange), for: UIControlEvents.editingChanged)
+        emailTextField.addTarget(self, action: #selector(self.textFieldDidChange), for: UIControlEvents.editingChanged)
+        passwordTextField.addTarget(self, action: #selector(self.textFieldDidChange), for: UIControlEvents.editingChanged)
         
     }
     
