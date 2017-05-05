@@ -64,7 +64,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="MtP-t1-HZf" kind="presentation" id="0xr-Mb-i6F"/>
+                                            <action selector="onClick_signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FEx-4W-m5r"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -92,6 +92,8 @@
                     <connections>
                         <outlet property="emailTextField" destination="HLM-dP-Kjo" id="qpV-0U-sP8"/>
                         <outlet property="passwordTextField" destination="3lL-We-gWR" id="G3i-3L-17U"/>
+                        <outlet property="signInButton" destination="lWt-Uc-VP5" id="CnH-8e-AQs"/>
+                        <segue destination="MtP-t1-HZf" kind="presentation" identifier="moveToTabBar" id="r64-d9-PVK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -150,7 +152,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="MtP-t1-HZf" kind="presentation" id="sqo-5T-IGz"/>
+                                            <action selector="signUp_onClick:" destination="Njg-TO-l06" eventType="touchUpInside" id="1Ed-1I-oEx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -192,7 +194,9 @@
                         <outlet property="avatarImage" destination="TTO-gX-WQT" id="km8-ev-2ti"/>
                         <outlet property="emailTextField" destination="Ewe-bA-2CE" id="U9l-dl-Fsi"/>
                         <outlet property="passwordTextField" destination="tSz-w1-nLa" id="7el-oi-Tkb"/>
+                        <outlet property="signUpButton" destination="p3y-Ma-aUX" id="g4L-UQ-ish"/>
                         <outlet property="usernameTextField" destination="4eR-pY-17E" id="eBz-UX-ABK"/>
+                        <segue destination="MtP-t1-HZf" kind="presentation" identifier="moveToTabBar2" id="uYv-RJ-10q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Oq-GW-sB8" sceneMemberID="firstResponder"/>
@@ -205,13 +209,13 @@
                 <viewControllerPlaceholder storyboardName="TabBar" referencedIdentifier="TabBarID" id="MtP-t1-HZf" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4DB-UG-5H4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="953" y="478"/>
+            <point key="canvasLocation" x="358" y="312"/>
         </scene>
     </scenes>
     <resources>
         <image name="avatar-placeholder" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sqo-5T-IGz"/>
+        <segue reference="uYv-RJ-10q"/>
     </inferredMetricsTieBreakers>
 </document>
