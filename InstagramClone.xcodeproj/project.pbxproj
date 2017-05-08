@@ -105,8 +105,7 @@
 		9D342AD61EBCDBE200B3178C /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
-				9DC7C6941EBD1A9600B84E90 /* AuthService.swift */,
-				9DC7C6961EBD240D00B84E90 /* Config.swift */,
+				9D9F27471EC01EE9004F07E0 /* General */,
 				9D7DA8BB1EBCF006005C18BE /* Delegates */,
 				9D7DA8B81EBCEFEB005C18BE /* ViewControllers */,
 				9D7DA8B91EBCEFF6005C18BE /* Storyboards */,
@@ -157,6 +156,15 @@
 				9D342AD71EBCDBE200B3178C /* AppDelegate.swift */,
 			);
 			name = Delegates;
+			sourceTree = "<group>";
+		};
+		9D9F27471EC01EE9004F07E0 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				9DC7C6941EBD1A9600B84E90 /* AuthService.swift */,
+				9DC7C6961EBD240D00B84E90 /* Config.swift */,
+			);
+			name = General;
 			sourceTree = "<group>";
 		};
 		9DC7C6931EBCF66400B84E90 /* TabBar Storyboards */ = {
