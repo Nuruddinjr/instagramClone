@@ -218,7 +218,7 @@
         <!--DetailViewController-->
         <scene sceneID="Cfa-Jr-gqC">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="DetailViewController" storyboardName="Search" referencedIdentifier="DetailViewController" id="4th-Mw-KSL" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="DetailViewController" storyboardName="Discover" referencedIdentifier="DetailViewController" id="4th-Mw-KSL" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSZ-ub-Dwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3312" y="748"/>
@@ -717,8 +717,8 @@
     <resources>
         <image name="Profile" width="20" height="21"/>
         <image name="Profile_Selected" width="20" height="21"/>
-        <image name="discover" width="16" height="16"/>
-        <image name="placeholderImg" width="16" height="16"/>
+        <image name="discover" width="22" height="22"/>
+        <image name="placeholderImg" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ujj-MU-eUJ"/>

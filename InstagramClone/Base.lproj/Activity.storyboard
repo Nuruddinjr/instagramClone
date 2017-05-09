@@ -12,7 +12,7 @@
         <!--Activity-->
         <scene sceneID="wDE-em-Prc">
             <objects>
-                <viewController id="q6c-0U-VCe" customClass="ActivityViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="q6c-0U-VCe" customClass="ActivityViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wVJ-Jf-jHr"/>
                         <viewControllerLayoutGuide type="bottom" id="Kv0-lg-JPL"/>
@@ -37,7 +37,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MAG-8a-5pZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="MAG-8a-5pZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

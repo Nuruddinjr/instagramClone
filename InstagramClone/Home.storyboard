@@ -349,11 +349,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Comment" width="16" height="16"/>
+        <image name="Comment" width="43" height="41"/>
         <image name="Home" width="21" height="23"/>
         <image name="Home_Selected" width="21" height="23"/>
-        <image name="Icon_Mute" width="16" height="16"/>
-        <image name="like" width="16" height="16"/>
-        <image name="share" width="16" height="16"/>
+        <image name="Icon_Mute" width="25" height="25"/>
+        <image name="like" width="46" height="41"/>
+        <image name="share" width="37" height="41"/>
     </resources>
 </document>

@@ -17,9 +17,8 @@
 		9D7DA8AB1EBCE09E005C18BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DA8AA1EBCE09E005C18BE /* GoogleService-Info.plist */; };
 		9D7DA8AD1EBCE11B005C18BE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA8AC1EBCE11B005C18BE /* SignUpViewController.swift */; };
 		9D7DA8AF1EBCEDCA005C18BE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA8AE1EBCEDCA005C18BE /* HomeViewController.swift */; };
-		9D7DA8B11EBCEE15005C18BE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA8B01EBCEE15005C18BE /* SearchViewController.swift */; };
 		9D7DA8B31EBCEE1A005C18BE /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA8B21EBCEE1A005C18BE /* CameraViewController.swift */; };
-		9D7DA8B51EBCEE28005C18BE /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA8B41EBCEE28005C18BE /* ActivityViewController.swift */; };
+		9D7DA8B51EBCEE28005C18BE /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA8B41EBCEE28005C18BE /* DiscoverViewController.swift */; };
 		9D7DA8B71EBCEE2E005C18BE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DA8B61EBCEE2E005C18BE /* ProfileViewController.swift */; };
 		9DAEA0B81EC1204900443D99 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0B71EC1204900443D99 /* User.swift */; };
 		9DAEA0BA1EC1207E00443D99 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0B91EC1207E00443D99 /* Post.swift */; };
@@ -34,9 +33,22 @@
 		9DAEA0CD1EC121A100443D99 /* HashTagApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0CC1EC121A100443D99 /* HashTagApi.swift */; };
 		9DAEA0CF1EC121B800443D99 /* MyPostsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0CE1EC121B800443D99 /* MyPostsApi.swift */; };
 		9DAEA0D11EC1221A00443D99 /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0D01EC1221A00443D99 /* HelperService.swift */; };
+		9DAEA0D31EC12CF400443D99 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0D21EC12CF400443D99 /* HomeTableViewCell.swift */; };
+		9DAEA0D61EC12D1700443D99 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0D51EC12D1700443D99 /* CommentTableViewCell.swift */; };
+		9DAEA0D81EC12D4100443D99 /* HeaderProfileCollectionReusableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0D71EC12D4100443D99 /* HeaderProfileCollectionReusableViewDelegate.swift */; };
+		9DAEA0DA1EC12D7B00443D99 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0D91EC12D7B00443D99 /* PhotoCollectionViewCell.swift */; };
+		9DAEA0DC1EC12D9200443D99 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0DB1EC12D9200443D99 /* PeopleTableViewCell.swift */; };
+		9DAEA0DE1EC12DAE00443D99 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0DD1EC12DAE00443D99 /* FilterCollectionViewCell.swift */; };
+		9DAEA0E01EC12DCD00443D99 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0DF1EC12DCD00443D99 /* CommentViewController.swift */; };
+		9DAEA0E21EC12DE600443D99 /* ProfileUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0E11EC12DE600443D99 /* ProfileUserViewController.swift */; };
+		9DAEA0E41EC12E0000443D99 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0E31EC12E0000443D99 /* DetailViewController.swift */; };
+		9DAEA0E61EC12E1300443D99 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0E51EC12E1300443D99 /* SettingTableViewController.swift */; };
+		9DAEA0E81EC12F5B00443D99 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0E71EC12F5B00443D99 /* ActivityViewController.swift */; };
+		9DAEA0EA1EC15FFF00443D99 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0E91EC15FFF00443D99 /* PeopleViewController.swift */; };
+		9DAEA0EC1EC1604C00443D99 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0EB1EC1604C00443D99 /* SearchViewController.swift */; };
 		9DC7C6861EBCF34200B84E90 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7C6841EBCF34200B84E90 /* TabBar.storyboard */; };
 		9DC7C6881EBCF52100B84E90 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7C6871EBCF52100B84E90 /* Home.storyboard */; };
-		9DC7C68B1EBCF57700B84E90 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7C6891EBCF57700B84E90 /* Search.storyboard */; };
+		9DC7C68B1EBCF57700B84E90 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7C6891EBCF57700B84E90 /* Discover.storyboard */; };
 		9DC7C68D1EBCF5A800B84E90 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7C68C1EBCF5A800B84E90 /* Camera.storyboard */; };
 		9DC7C6901EBCF5D500B84E90 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7C68E1EBCF5D500B84E90 /* Activity.storyboard */; };
 		9DC7C6921EBCF60200B84E90 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7C6911EBCF60200B84E90 /* Profile.storyboard */; };
@@ -60,9 +72,8 @@
 		9D7DA8AA1EBCE09E005C18BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D7DA8AC1EBCE11B005C18BE /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9D7DA8AE1EBCEDCA005C18BE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		9D7DA8B01EBCEE15005C18BE /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9D7DA8B21EBCEE1A005C18BE /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		9D7DA8B41EBCEE28005C18BE /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		9D7DA8B41EBCEE28005C18BE /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		9D7DA8B61EBCEE2E005C18BE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9DAEA0B71EC1204900443D99 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9DAEA0B91EC1207E00443D99 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -77,9 +88,22 @@
 		9DAEA0CC1EC121A100443D99 /* HashTagApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashTagApi.swift; sourceTree = "<group>"; };
 		9DAEA0CE1EC121B800443D99 /* MyPostsApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPostsApi.swift; sourceTree = "<group>"; };
 		9DAEA0D01EC1221A00443D99 /* HelperService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
+		9DAEA0D21EC12CF400443D99 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		9DAEA0D51EC12D1700443D99 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		9DAEA0D71EC12D4100443D99 /* HeaderProfileCollectionReusableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderProfileCollectionReusableViewDelegate.swift; sourceTree = "<group>"; };
+		9DAEA0D91EC12D7B00443D99 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		9DAEA0DB1EC12D9200443D99 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		9DAEA0DD1EC12DAE00443D99 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		9DAEA0DF1EC12DCD00443D99 /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		9DAEA0E11EC12DE600443D99 /* ProfileUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileUserViewController.swift; sourceTree = "<group>"; };
+		9DAEA0E31EC12E0000443D99 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9DAEA0E51EC12E1300443D99 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		9DAEA0E71EC12F5B00443D99 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		9DAEA0E91EC15FFF00443D99 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		9DAEA0EB1EC1604C00443D99 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9DC7C6851EBCF34200B84E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
 		9DC7C6871EBCF52100B84E90 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		9DC7C68A1EBCF57700B84E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
+		9DC7C68A1EBCF57700B84E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
 		9DC7C68C1EBCF5A800B84E90 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		9DC7C68F1EBCF5D500B84E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Activity.storyboard; sourceTree = "<group>"; };
 		9DC7C6911EBCF60200B84E90 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -143,6 +167,7 @@
 				9D7DA8BA1EBCEFFF005C18BE /* Info */,
 				9DC7C6BB1EBD27A900B84E90 /* ProgressHUD */,
 				9DC7C6B71EBD279000B84E90 /* InstagramClone-Bridging-Header.h */,
+				9DAEA0D41EC12CF700443D99 /* Views */,
 			);
 			path = InstagramClone;
 			sourceTree = "<group>";
@@ -150,14 +175,19 @@
 		9D7DA8B81EBCEFEB005C18BE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9D7DA8AC1EBCE11B005C18BE /* SignUpViewController.swift */,
-				9D3023EE1EC0E181006933DC /* PostCell.swift */,
-				9D7DA8AE1EBCEDCA005C18BE /* HomeViewController.swift */,
-				9D7DA8B01EBCEE15005C18BE /* SearchViewController.swift */,
-				9D7DA8B21EBCEE1A005C18BE /* CameraViewController.swift */,
 				9D7DA8A81EBCDDAB005C18BE /* SignInViewController.swift */,
-				9D7DA8B41EBCEE28005C18BE /* ActivityViewController.swift */,
+				9D7DA8AC1EBCE11B005C18BE /* SignUpViewController.swift */,
+				9D7DA8AE1EBCEDCA005C18BE /* HomeViewController.swift */,
+				9DAEA0DF1EC12DCD00443D99 /* CommentViewController.swift */,
+				9D7DA8B41EBCEE28005C18BE /* DiscoverViewController.swift */,
+				9DAEA0EB1EC1604C00443D99 /* SearchViewController.swift */,
+				9D7DA8B21EBCEE1A005C18BE /* CameraViewController.swift */,
+				9DAEA0E71EC12F5B00443D99 /* ActivityViewController.swift */,
 				9D7DA8B61EBCEE2E005C18BE /* ProfileViewController.swift */,
+				9DAEA0E11EC12DE600443D99 /* ProfileUserViewController.swift */,
+				9DAEA0E91EC15FFF00443D99 /* PeopleViewController.swift */,
+				9DAEA0E51EC12E1300443D99 /* SettingTableViewController.swift */,
+				9DAEA0E31EC12E0000443D99 /* DetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -192,6 +222,7 @@
 		9D9F27471EC01EE9004F07E0 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				9D3023EE1EC0E181006933DC /* PostCell.swift */,
 				9DC7C6941EBD1A9600B84E90 /* AuthService.swift */,
 				9DC7C6961EBD240D00B84E90 /* Config.swift */,
 				9DAEA0D01EC1221A00443D99 /* HelperService.swift */,
@@ -225,6 +256,19 @@
 			name = APIs;
 			sourceTree = "<group>";
 		};
+		9DAEA0D41EC12CF700443D99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DAEA0D21EC12CF400443D99 /* HomeTableViewCell.swift */,
+				9DAEA0D51EC12D1700443D99 /* CommentTableViewCell.swift */,
+				9DAEA0D71EC12D4100443D99 /* HeaderProfileCollectionReusableViewDelegate.swift */,
+				9DAEA0D91EC12D7B00443D99 /* PhotoCollectionViewCell.swift */,
+				9DAEA0DB1EC12D9200443D99 /* PeopleTableViewCell.swift */,
+				9DAEA0DD1EC12DAE00443D99 /* FilterCollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		9DC7C6931EBCF66400B84E90 /* TabBar Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,7 +276,7 @@
 				9DC7C6911EBCF60200B84E90 /* Profile.storyboard */,
 				9DC7C68E1EBCF5D500B84E90 /* Activity.storyboard */,
 				9DC7C68C1EBCF5A800B84E90 /* Camera.storyboard */,
-				9DC7C6891EBCF57700B84E90 /* Search.storyboard */,
+				9DC7C6891EBCF57700B84E90 /* Discover.storyboard */,
 				9DC7C6871EBCF52100B84E90 /* Home.storyboard */,
 			);
 			name = "TabBar Storyboards";
@@ -329,7 +373,7 @@
 				9D342AE21EBCDBE200B3178C /* LaunchScreen.storyboard in Resources */,
 				9D7DA8AB1EBCE09E005C18BE /* GoogleService-Info.plist in Resources */,
 				9DC7C6881EBCF52100B84E90 /* Home.storyboard in Resources */,
-				9DC7C68B1EBCF57700B84E90 /* Search.storyboard in Resources */,
+				9DC7C68B1EBCF57700B84E90 /* Discover.storyboard in Resources */,
 				9D342ADF1EBCDBE200B3178C /* Assets.xcassets in Resources */,
 				9D342ADD1EBCDBE200B3178C /* Main.storyboard in Resources */,
 			);
@@ -390,27 +434,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D7DA8B11EBCEE15005C18BE /* SearchViewController.swift in Sources */,
+				9DAEA0E41EC12E0000443D99 /* DetailViewController.swift in Sources */,
 				9D7DA8AD1EBCE11B005C18BE /* SignUpViewController.swift in Sources */,
+				9DAEA0D31EC12CF400443D99 /* HomeTableViewCell.swift in Sources */,
 				9D7DA8A91EBCDDAB005C18BE /* SignInViewController.swift in Sources */,
 				9DC7C6951EBD1A9600B84E90 /* AuthService.swift in Sources */,
+				9DAEA0EA1EC15FFF00443D99 /* PeopleViewController.swift in Sources */,
 				9D342AD81EBCDBE200B3178C /* AppDelegate.swift in Sources */,
 				9DAEA0BA1EC1207E00443D99 /* Post.swift in Sources */,
 				9DAEA0B81EC1204900443D99 /* User.swift in Sources */,
+				9DAEA0E01EC12DCD00443D99 /* CommentViewController.swift in Sources */,
 				9DAEA0C51EC1213000443D99 /* FeedApi.swift in Sources */,
 				9DAEA0C11EC1210100443D99 /* UserApi.swift in Sources */,
-				9D7DA8B51EBCEE28005C18BE /* ActivityViewController.swift in Sources */,
+				9D7DA8B51EBCEE28005C18BE /* DiscoverViewController.swift in Sources */,
+				9DAEA0D81EC12D4100443D99 /* HeaderProfileCollectionReusableViewDelegate.swift in Sources */,
+				9DAEA0E61EC12E1300443D99 /* SettingTableViewController.swift in Sources */,
 				9DAEA0CB1EC1218600443D99 /* CommentApi.swift in Sources */,
+				9DAEA0DE1EC12DAE00443D99 /* FilterCollectionViewCell.swift in Sources */,
+				9DAEA0E21EC12DE600443D99 /* ProfileUserViewController.swift in Sources */,
 				9DAEA0C91EC1216C00443D99 /* Post_CommentApi.swift in Sources */,
 				9DAEA0CF1EC121B800443D99 /* MyPostsApi.swift in Sources */,
 				9DAEA0BF1EC120C900443D99 /* PostApi.swift in Sources */,
 				9DC7C6BA1EBD279000B84E90 /* ProgressHUD.m in Sources */,
 				9DAEA0C31EC1212200443D99 /* FollowApi.swift in Sources */,
+				9DAEA0DA1EC12D7B00443D99 /* PhotoCollectionViewCell.swift in Sources */,
 				9D7DA8AF1EBCEDCA005C18BE /* HomeViewController.swift in Sources */,
+				9DAEA0DC1EC12D9200443D99 /* PeopleTableViewCell.swift in Sources */,
+				9DAEA0EC1EC1604C00443D99 /* SearchViewController.swift in Sources */,
 				9DAEA0BC1EC1209900443D99 /* Comment.swift in Sources */,
 				9DAEA0CD1EC121A100443D99 /* HashTagApi.swift in Sources */,
 				9DC7C6971EBD240D00B84E90 /* Config.swift in Sources */,
 				9D7DA8B71EBCEE2E005C18BE /* ProfileViewController.swift in Sources */,
+				9DAEA0D61EC12D1700443D99 /* CommentTableViewCell.swift in Sources */,
+				9DAEA0E81EC12F5B00443D99 /* ActivityViewController.swift in Sources */,
 				9DAEA0D11EC1221A00443D99 /* HelperService.swift in Sources */,
 				9D7DA8B31EBCEE1A005C18BE /* CameraViewController.swift in Sources */,
 				9DAEA0C71EC1214000443D99 /* Api.swift in Sources */,
@@ -445,12 +501,12 @@
 			name = TabBar.storyboard;
 			sourceTree = "<group>";
 		};
-		9DC7C6891EBCF57700B84E90 /* Search.storyboard */ = {
+		9DC7C6891EBCF57700B84E90 /* Discover.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9DC7C68A1EBCF57700B84E90 /* Base */,
 			);
-			name = Search.storyboard;
+			name = Discover.storyboard;
 			sourceTree = "<group>";
 		};
 		9DC7C68E1EBCF5D500B84E90 /* Activity.storyboard */ = {

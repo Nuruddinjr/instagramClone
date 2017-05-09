@@ -390,7 +390,7 @@
         <!--Navigation Controller-->
         <scene sceneID="5rG-9F-2Xo">
             <objects>
-                <navigationController storyboardIdentifier="SearchNavigation" automaticallyAdjustsScrollViewInsets="NO" id="jCe-aR-sDO" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DiscoverNavigation" automaticallyAdjustsScrollViewInsets="NO" id="jCe-aR-sDO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Search" selectedImage="Search_Selected" id="NM6-Xx-PI4">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
@@ -411,11 +411,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Comment" width="16" height="16"/>
-        <image name="Icon_Mute" width="16" height="16"/>
+        <image name="Comment" width="43" height="41"/>
+        <image name="Icon_Mute" width="25" height="25"/>
         <image name="Search" width="23" height="22"/>
         <image name="Search_Selected" width="23" height="22"/>
-        <image name="like" width="16" height="16"/>
-        <image name="share" width="16" height="16"/>
+        <image name="like" width="46" height="41"/>
+        <image name="share" width="37" height="41"/>
     </resources>
 </document>

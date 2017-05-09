@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="-1264" y="151"/>
         </scene>
-        <!--SearchNavigation-->
+        <!--DiscoverNavigation-->
         <scene sceneID="eEj-9C-ACB">
             <objects>
-                <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="SearchNavigation" id="iXE-Ll-3zr" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Discover" referencedIdentifier="DiscoverNavigation" id="iXE-Ll-3zr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="1yo-oi-n7m"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rpf-Ml-Srq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -63,7 +63,7 @@
         <!--ActivityNavigation-->
         <scene sceneID="eaO-Wm-mKb">
             <objects>
-                <viewControllerPlaceholder storyboardName="Activity" referencedIdentifier="ActivityNavigation" id="x0n-z1-XQR" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="DiscoverNavigation" storyboardName="Activity" referencedIdentifier="ActivityNavigation" id="x0n-z1-XQR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="xQt-wR-vgP"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgN-8G-jxF" userLabel="First Responder" sceneMemberID="firstResponder"/>

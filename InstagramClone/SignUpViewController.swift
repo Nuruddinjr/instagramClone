@@ -107,7 +107,7 @@ class SignUpViewController: UIViewController {
         
          view.endEditing(true)
         if let profileImg = self.selectedImage, let imageData = UIImageJPEGRepresentation(profileImg, 0.1) {
-            AuthService.signUp(email: emailTextField.text!, password: passwordTextField.text!, username: usernameTextField.text!, imageData: imageData, onSuccess: {
+            AuthService.signUp(username: usernameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!, imageData: imageData, onSuccess: {
                 ProgressHUD.showSuccess("Sucessful login")
                 self.performSegue(withIdentifier: "moveToTabBar2", sender: nil)
             }, onError: { (errorString) in

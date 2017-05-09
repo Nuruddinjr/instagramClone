@@ -1,20 +1,23 @@
 //
-//  ProfileViewController.swift
+//  ProfileUserViewController.swift
 //  InstagramClone
 //
-//  Created by Nuruddin on 5/5/17.
+//  Created by Nuruddin on 5/8/17.
 //  Copyright © 2017 IUTlab. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileUserViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     var user: User!
     var posts: [Post] = []
+    var userId = ""
+    var delegate: HeaderProfileCollectionReusableViewDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("userId: \(userId)")
         collectionView.dataSource = self
         collectionView.delegate = self
         fetchUser()
@@ -22,34 +25,33 @@ class ProfileViewController: UIViewController {
     }
     
     func fetchUser() {
-        Api.User.observeCurrentUser { (user) in
-            self.user = user
-            self.navigationItem.title = user.username
-            self.collectionView.reloadData()
+        Api.User.observeUser(withId: userId) { (user) in
+            self.isFollowing(userId: user.id!, completed: { (value) in
+                user.isFollowing = value
+                self.user = user
+                self.navigationItem.title = user.username
+                self.collectionView.reloadData()
+            })
         }
     }
     
+    func isFollowing(userId: String, completed: @escaping (Bool) -> Void) {
+        Api.Follow.isFollowing(userId: userId, completed: completed)
+    }
+    
     func fetchMyPosts() {
-        guard let currentUser = Api.User.CURRENT_USER else {
-            return
-        }
-        Api.MyPosts.REF_MYPOSTS.child(currentUser.uid).observe(.childAdded, with: {
-            snapshot in
-            Api.Post.observePost(withId: snapshot.key, completion: {
+        Api.MyPosts.fetchMyPosts(userId: userId) { (key) in
+            Api.Post.observePost(withId: key, completion: {
                 post in
                 self.posts.append(post)
                 self.collectionView.reloadData()
             })
-        })
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Profile_SettingSegue" {
-            let settingVC = segue.destination as! SettingTableViewController
-            settingVC.delegate = self
-        }
         
-        if segue.identifier == "Profile_DetailSegue" {
+        if segue.identifier == "ProfileUser_DetailSegue" {
             let detailVC = segue.destination as! DetailViewController
             let postId = sender  as! String
             detailVC.postId = postId
@@ -58,7 +60,8 @@ class ProfileViewController: UIViewController {
     
 }
 
-extension ProfileViewController: UICollectionViewDataSource {
+
+extension ProfileUserViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return posts.count
     }
@@ -68,6 +71,7 @@ extension ProfileViewController: UICollectionViewDataSource {
         let post = posts[indexPath.row]
         cell.post = post
         cell.delegate = self
+        
         return cell
     }
     
@@ -75,20 +79,20 @@ extension ProfileViewController: UICollectionViewDataSource {
         let headerViewCell = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HeaderProfileCollectionReusableView", for: indexPath) as! HeaderProfileCollectionReusableView
         if let user = self.user {
             headerViewCell.user = user
+            headerViewCell.delegate = self.delegate
             headerViewCell.delegate2 = self
         }
         return headerViewCell
     }
-    
 }
 
-extension ProfileViewController: HeaderProfileCollectionReusableViewDelegateSwitchSettingVC {
+extension ProfileUserViewController: HeaderProfileCollectionReusableViewDelegateSwitchSettingVC {
     func goToSettingVC() {
-        performSegue(withIdentifier: "Profile_SettingSegue", sender: nil)
+        performSegue(withIdentifier: "ProfileUser_SettingSegue", sender: nil)
     }
 }
 
-extension ProfileViewController: UICollectionViewDelegateFlowLayout {
+extension ProfileUserViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 2
     }
@@ -102,14 +106,9 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension ProfileViewController: SettingTableViewControllerDelegate {
-    func updateUserInfor() {
-        self.fetchUser()
+extension ProfileUserViewController: PhotoCollectionViewCellDelegate {
+    func goToDetailVC(postId: String) {
+        performSegue(withIdentifier: "ProfileUser_DetailSegue", sender: postId)
     }
 }
 
-extension ProfileViewController: PhotoCollectionViewCellDelegate {
-    func goToDetailVC(postId: String) {
-        performSegue(withIdentifier: "Profile_DetailSegue", sender: postId)
-    }
-}
