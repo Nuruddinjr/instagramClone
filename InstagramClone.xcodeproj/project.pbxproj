@@ -46,6 +46,7 @@
 		9DAEA0E81EC12F5B00443D99 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0E71EC12F5B00443D99 /* ActivityViewController.swift */; };
 		9DAEA0EA1EC15FFF00443D99 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0E91EC15FFF00443D99 /* PeopleViewController.swift */; };
 		9DAEA0EC1EC1604C00443D99 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0EB1EC1604C00443D99 /* SearchViewController.swift */; };
+		9DAEA0EE1EC1646000443D99 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEA0ED1EC1646000443D99 /* FilterViewController.swift */; };
 		9DC7C6861EBCF34200B84E90 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7C6841EBCF34200B84E90 /* TabBar.storyboard */; };
 		9DC7C6881EBCF52100B84E90 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7C6871EBCF52100B84E90 /* Home.storyboard */; };
 		9DC7C68B1EBCF57700B84E90 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7C6891EBCF57700B84E90 /* Discover.storyboard */; };
@@ -101,6 +102,7 @@
 		9DAEA0E71EC12F5B00443D99 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		9DAEA0E91EC15FFF00443D99 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		9DAEA0EB1EC1604C00443D99 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9DAEA0ED1EC1646000443D99 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		9DC7C6851EBCF34200B84E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBar.storyboard; sourceTree = "<group>"; };
 		9DC7C6871EBCF52100B84E90 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		9DC7C68A1EBCF57700B84E90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				9DAEA0E91EC15FFF00443D99 /* PeopleViewController.swift */,
 				9DAEA0E51EC12E1300443D99 /* SettingTableViewController.swift */,
 				9DAEA0E31EC12E0000443D99 /* DetailViewController.swift */,
+				9DAEA0ED1EC1646000443D99 /* FilterViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				9DC7C6971EBD240D00B84E90 /* Config.swift in Sources */,
 				9D7DA8B71EBCEE2E005C18BE /* ProfileViewController.swift in Sources */,
 				9DAEA0D61EC12D1700443D99 /* CommentTableViewCell.swift in Sources */,
+				9DAEA0EE1EC1646000443D99 /* FilterViewController.swift in Sources */,
 				9DAEA0E81EC12F5B00443D99 /* ActivityViewController.swift in Sources */,
 				9DAEA0D11EC1221A00443D99 /* HelperService.swift in Sources */,
 				9D7DA8B31EBCEE1A005C18BE /* CameraViewController.swift in Sources */,
